@@ -1,0 +1,10 @@
+<section id="stock-data">
+  <form (submit)="retrieveData()">
+    <input type="text" name="ticker" [(ngModel)]="ticker" required />
+    <input type="submit" value="Get Data" />
+  </form>
+</section>
+<div *ngIf="stock">
+  <p>{{stock.t}}</p>
+  <p>{{stock.p}}</p>
+</div>
