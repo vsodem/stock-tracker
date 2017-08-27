@@ -26,5 +26,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, ip, () => {
-  console.log('\nServer started on ' + ip + ':' + port + '\n');
+  console.log('Server started on ' + ip + ':' + port + '\n');
 });

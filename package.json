@@ -4,12 +4,7 @@
   "description": "A simple web app that tracks stock data in real time",
   "main": "app.js",
   "scripts": {
-    "npm": "npm",
-    "start": "node app.js",
-    "dev": "npm run-script build && npm run-script serve-build",
-    "serve": "cd tracker-src && ng serve -o",
-    "build": "cd tracker-src && ng build --prod",
-    "serve-build": "nodemon"
+    "start": "node app.js"
   },
   "author": "Vishal Sodem",
   "license": "ISC",

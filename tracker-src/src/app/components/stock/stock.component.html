@@ -1,10 +1,17 @@
 <section id="stock-data">
   <form (submit)="retrieveData()">
-    <input type="text" name="ticker" [(ngModel)]="ticker" required />
-    <input type="submit" value="Get Data" />
+    <md-input-container>
+      <input maxlength="6" mdInput uppercase placeholder="Ticker" name="ticker" [(ngModel)]="ticker" />
+    </md-input-container>
+    <button md-raised-button type="submit">Get Data</button>
   </form>
 </section>
 <div *ngIf="stock">
-  <p>{{stock.t}}</p>
-  <p>{{stock.p}}</p>
+  <p>Ticker:  {{stock.t}}</p>
+  <p>Exchange:  {{stock.e}}</p>
+  <p>Last Price Traded:  {{stock.l}}</p>
+  <p>Change Since Close:  {{stock.c}}</p>
+  <p>Change Percentage:  {{stock.cp}}</p>
+  <p>Symbol:  {{stock.s}}</p>
+  <p>Last Trade Date & Time:  {{stock.lt}}</p>
 </div>

@@ -12,7 +12,7 @@ export class StockDataService {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    return this.http.post('/stocks/data', stock, { headers: headers })
+    return this.http.post('http://127.0.0.1:8080/stocks/data', stock, { headers: headers })
       .map(res => res.json());
   }
 }
